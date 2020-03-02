@@ -1,0 +1,8 @@
+---
+permalink: "/main.css"
+---
+{% set css %}
+    {% include "./main.css" %}
+    {% include "./code/darcula.css" %}
+{% endset %}
+{{ css | cssmin | safe }}
