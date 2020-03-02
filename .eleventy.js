@@ -16,14 +16,17 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addPlugin(cacheBuster({}));
 
   // Add filters
-  eleventyConfig.addFilter(
-    "cssmin",
-    code => new CleanCSS({}).minify(code).styles
-  );
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return process.env.ELEVENTY_PRODUCTION
+      ? new CleanCSS({}).minify(code).styles
+      : code;
+  });
 
   // Minify html code
   eleventyConfig.addTransform("html-minify", function(content, outputPath) {
-    return outputPath && outputPath.endsWith(".html")
+    return process.env.ELEVENTY_PRODUCTION &&
+      outputPath &&
+      outputPath.endsWith(".html")
       ? htmlMinifier.minify(content, {
           useShortDoctype: true,
           removeComments: true,
