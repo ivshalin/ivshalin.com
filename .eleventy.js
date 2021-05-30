@@ -1,43 +1,7 @@
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
-const inclusiveLangPlugin = require("@11ty/eleventy-plugin-inclusive-language");
-const cacheBuster = require("@mightyplow/eleventy-plugin-cache-buster");
-const CleanCSS = require("clean-css");
-const htmlMinifier = require("html-minifier");
-
-const DIR_INPUT = "src";
-
-module.exports = function(eleventyConfig) {
-  // Add plugins
-  eleventyConfig.addPlugin(syntaxHighlight, {
-    templateFormats: ["md"],
-    alwaysWrapLineHighlights: false
-  });
-  eleventyConfig.addPlugin(inclusiveLangPlugin);
-  eleventyConfig.addPlugin(cacheBuster({}));
-
-  // Add filters
-  eleventyConfig.addFilter("cssmin", function(code) {
-    return process.env.ELEVENTY_PRODUCTION
-      ? new CleanCSS({}).minify(code).styles
-      : code;
-  });
-
-  // Minify html code
-  eleventyConfig.addTransform("html-minify", function(content, outputPath) {
-    return process.env.ELEVENTY_PRODUCTION &&
-      outputPath &&
-      outputPath.endsWith(".html")
-      ? htmlMinifier.minify(content, {
-          useShortDoctype: true,
-          removeComments: true,
-          collapseWhitespace: true
-        })
-      : content;
-  });
-
+module.exports = function() {
   return {
     dir: {
-      input: DIR_INPUT,
+      input: "src",
       layouts: "layouts"
     },
     dataTemplateEngine: "njk",
