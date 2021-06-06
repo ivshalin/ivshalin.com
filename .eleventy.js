@@ -1,4 +1,6 @@
-module.exports = function() {
+module.exports = function(config) {
+    config.addPassthroughCopy('src/styles');
+
     return {
         dir: {
             input: 'src',
