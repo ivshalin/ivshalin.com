@@ -1,2 +1,4 @@
-- Hello!
-- This is main posts page
+Hello!
+This is main posts page
+
+Hi!

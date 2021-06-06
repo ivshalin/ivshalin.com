@@ -1,0 +1,23 @@
+.page {
+    color: var(--color-text);
+    background: var(--color-bg);
+    scroll-behavior: smooth;
+}
+
+.page__body {
+    display: grid;
+    grid-template-columns: 1fr var(--main-column-width) 1fr;
+    grid-gap: 0 3em;
+    margin: 0;
+    font-size: var(--font-size);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica', 'Arial',
+        sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji';
+    line-height: var(--line-height);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: contain;
+}
+
+.page__content {
+    grid-column: 2 / span 1;
+}
