@@ -1,0 +1,12 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: calc(var(--line-space) * 4);
+    grid-column: 2 / span 1;
+}
+
+.header__link {
+    text-decoration: none;
+}

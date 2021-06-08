@@ -1,21 +1,21 @@
 {
-  "name": "ivshalin.com",
-  "version": "0.0.1",
-  "homepage": "https://ivshalin.com/",
-  "private": true,
-  "scripts": {
-    "build": "eleventy",
-    "build-production": "ELEVENTY_PRODUCTION=true eleventy",
-    "serve": "npx @11ty/eleventy --serve"
-  },
-  "keywords": [],
-  "author": {
-    "name": "Ivan Shalin",
-    "email": "shalin.ivan@gmail.com",
-    "url": "https://ivshalin.com/"
-  },
-  "license": "MIT",
-  "devDependencies": {
-    "@11ty/eleventy": "0.12.1"
-  }
+    "name": "ivshalin.com",
+    "version": "0.0.1",
+    "homepage": "https://ivshalin.com/",
+    "private": true,
+    "scripts": {
+        "build": "eleventy",
+        "build-production": "ELEVENTY_PRODUCTION=true eleventy",
+        "serve": "npx @11ty/eleventy --serve"
+    },
+    "keywords": [],
+    "author": {
+        "name": "Ivan Shalin",
+        "email": "shalin.ivan@gmail.com",
+        "url": "https://ivshalin.com/"
+    },
+    "license": "MIT",
+    "devDependencies": {
+        "@11ty/eleventy": "0.12.1"
+    }
 }

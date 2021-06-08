@@ -1,4 +1,5 @@
 @import 'blocks/page.css';
+@import 'blocks/header.css';
 
 :root {
     --color-text: black;
@@ -6,5 +7,6 @@
 
     --font-size: 18px;
     --line-height: 1.34;
+    --line-space: calc(var(--line-height) * 1em);
     --main-column-width: 700px;
 }
