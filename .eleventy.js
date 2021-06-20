@@ -6,7 +6,8 @@ module.exports = function(config) {
             input: 'src',
             layouts: 'layouts',
             output: '_public',
-            includes: 'includes'
+            includes: 'includes',
+            data: 'data'
         },
         dataTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
