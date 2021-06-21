@@ -1,0 +1,24 @@
+.site-nav__list {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.site-nav__item {
+    display: block;
+    margin-left: 1em;
+}
+
+.site-nav__item a {
+    display: inline-block;
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+.site-nav__item a:hover,
+.site-nav__item a:focus,
+.site-nav__item a:active {
+    text-decoration: underline;
+}
