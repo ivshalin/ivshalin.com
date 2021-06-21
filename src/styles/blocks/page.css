@@ -21,3 +21,15 @@
 .page__content {
     grid-column: 2 / span 1;
 }
+
+@media (max-width: 1000px) {
+    .page__body {
+        grid-gap: 0;
+    }
+}
+
+@media (max-width: 750px) {
+    .page__body {
+        grid-template-columns: var(--mobile-border-width) 1fr var(--mobile-border-width);
+    }
+}

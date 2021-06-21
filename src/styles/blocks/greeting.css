@@ -1,0 +1,25 @@
+.greeting {
+    display: flex;
+}
+
+.greeting__photo {
+    height: calc(var(--line-height) * 4em);
+    width: calc(var(--line-height) * 4em);
+    border-radius: 50%;
+    margin-right: 0.8em;
+}
+
+.greeting__text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+}
+
+.greeting__title {
+    margin: 0;
+}
+
+.greeting__text {
+    margin: 0;
+}
