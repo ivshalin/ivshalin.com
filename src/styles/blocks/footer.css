@@ -1,0 +1,31 @@
+.footer {
+    grid-column: 2 / span 1;
+    padding: var(--line-space) 0;
+}
+
+.footer a {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+
+.footer__social-list {
+    margin: 0;
+    padding: 0;
+}
+
+.footer__social-item {
+    display: inline;
+}
+
+.footer__technologies {
+    margin-top: var(--line-space);
+    font-size: calc(var(--font-size) * 0.75);
+    text-align: center;
+}
+
+.footer__copyright {
+    margin-top: calc(var(--line-space) * 0.5);
+    font-size: calc(var(--font-size) * 0.75);
+    text-align: center;
+    font-weight: bold;
+}

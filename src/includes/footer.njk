@@ -1,0 +1,26 @@
+<footer class="footer">
+    <ul class="footer__social-list">
+        <li class="footer__social-item">
+            <a href="https://twitter.com/ivshalin" rel="noopener me">Twitter</a>
+        </li>
+        <li class="footer__social-item">
+            <a href="https://github.com/ivshalin" rel="noopener me">GitHub</a>
+        </li>
+        <li class="footer__social-item">
+            <a href="https://www.linkedin.com/in/ivan-shalin-49b711197" rel="noopener me">LinkedIn</a>
+        </li>
+    </ul>
+    <div class="footer__technologies">
+        Powered by <a href="https://www.11ty.dev/" rel="noopener">11ty</a> and <a href="https://www.netlify.com/" rel="noopener">Netlify</a>
+    </div>
+    <div class="footer__copyright" itemscope itemtype="https://schema.org/CreativeWork">
+        Copyright &copy;
+        <span itemprop="copyrightYear">{{ helpers.getCurrentYear() }}</span>
+        <span itemprop="copyrightHolder">
+            <span itemscope itemtype="https://schema.org/Person">
+                <span itemprop="givenName">{{ site.author.firstName }}</span>
+                <span itemprop="familyName">{{ site.author.secondName }}</span>
+            </span>
+        </span>
+    </div>
+</footer>

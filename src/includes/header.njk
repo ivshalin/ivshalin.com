@@ -1,7 +1,9 @@
 <header class="header">
     <a href="/" class="header__home-link">
-        <span itemprop="givenName">Ivan</span>
-        <span itemprop="familyName">Shalin</span>
+        <span itemscope itemtype="https://schema.org/Person">
+            <span itemprop="givenName">{{ site.author.firstName }}</span>
+            <span itemprop="familyName">{{ site.author.secondName }}</span>
+        </span>
     </a>
 
     <nav class="site-nav">
