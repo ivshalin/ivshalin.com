@@ -2,3 +2,7 @@
     list-style: none;
     padding: 0;
 }
+
+.articles-list__item:not(:last-child) {
+    margin-bottom: calc(var(--line-space) * 2);
+}

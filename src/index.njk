@@ -8,7 +8,7 @@ isIndex: true
 
 <ul class="articles-list">
     {%- for post in collections.post -%}
-        <li>
+        <li class="articles-list__item">
             <article class="article-snippet">
                 <h2 class="article-snippet__title">
                     <a class="article-snippet__link" href="{{ post.url }}">{{ post.data.title }}</a>
