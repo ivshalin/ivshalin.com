@@ -7,6 +7,17 @@ module.exports = function(config) {
         return `${month} ${date.getDate()}, ${date.getFullYear()}`;
     });
 
+    config.addFilter('readingTime', (rawText, options = { speed: 200 }) => {
+        const minutesForEmoji = 5;
+        const textLength = rawText.replace(/(<([^>]+)>)/gi, '').length;
+        const totalMinutes = Math.ceil(textLength / options.speed);
+        const emojisString = Array.from({ length: Math.ceil(totalMinutes / minutesForEmoji) })
+            .fill('⏳')
+            .join('');
+
+        return `${emojisString} ${totalMinutes} min`;
+    });
+
     return {
         dir: {
             input: 'src',

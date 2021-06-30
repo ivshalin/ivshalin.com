@@ -15,7 +15,7 @@ isIndex: true
                 </h2>
                 <div class="article-snippet__meta">
                     <time class="article-snippet__datetime" datetime="{{ post.data.date.toISOString() }}">{{ post.data.date | readableDate}}</time>
-                    <div>⏳ 3 min to read</div>
+                    <div>{{ post.templateContent | readingTime }} to read</div>
                 </div>
                 <p class="article-snippet__text">Post preview</p>
             </article>
