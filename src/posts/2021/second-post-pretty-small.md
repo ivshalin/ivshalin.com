@@ -1,7 +1,7 @@
 ---
-title: My First post
+title: My Second post pretty small post
 slug: first-post
-date: 2020-03-01
+date: 2021-06-03
 description: My Description
 keywords:
   - ivshalin first post

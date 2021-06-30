@@ -6,10 +6,19 @@ isIndex: true
 
 {% include 'greeting.njk' %}
 
-<ul>
+<ul class="articles-list">
     {%- for post in collections.post -%}
         <li>
-            <a href="{{ post.url }}">{{ post.data.title }}</a>
+            <article class="article-snippet">
+                <h2 class="article-snippet__title">
+                    <a class="article-snippet__link" href="{{ post.url }}">{{ post.data.title }}</a>
+                </h2>
+                <div class="article-snippet__meta">
+                    <time class="article-snippet__datetime" datetime="{{ post.data.date.toISOString() }}">{{ post.data.date | readableDate}}</time>
+                    <div>⏳ 3 min to read</div>
+                </div>
+                <p class="article-snippet__text">Post preview</p>
+            </article>
         </li>
     {%- endfor -%}
 </ul>

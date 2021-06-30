@@ -3,6 +3,8 @@
 @import 'blocks/site-nav.css';
 @import 'blocks/greeting.css';
 @import 'blocks/footer.css';
+@import 'blocks/articles-list.css';
+@import 'blocks/article-snippet.css';
 
 :root {
     --color-text: black;
@@ -12,6 +14,8 @@
     --font-size: 18px;
     --line-height: 1.34;
     --line-space: calc(var(--line-height) * 1em);
+    --half-line-space: calc(var(--line-space) * 0.5);
+    --quater-line-space: calc(var(--line-space) * 0.25);
     --main-column-width: 680px;
     --mobile-border-width: 15px;
 }

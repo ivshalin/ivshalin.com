@@ -1,5 +1,6 @@
 .greeting {
     display: flex;
+    margin-bottom: calc(var(--line-space) * 2);
 }
 
 .greeting__photo {

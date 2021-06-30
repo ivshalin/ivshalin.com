@@ -1,0 +1,23 @@
+.article-snippet__title {
+    margin: 0 0 var(--quater-line-space) 0;
+}
+
+.article-snippet__link {
+    color: var(--color-accent);
+}
+
+.article-snippet__text {
+    margin-top: var(--quater-line-space);
+    margin-bottom: var(--line-space);
+}
+
+.article-snippet__meta {
+    display: flex;
+    font-size: calc(var(--font-size) * .8);
+}
+
+.article-snippet__meta > :not(:last-child)::after {
+    display: inline-block;
+    padding: 0 0.5em;
+    content: '·';
+}
