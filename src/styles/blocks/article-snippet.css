@@ -4,6 +4,7 @@
 
 .article-snippet__link {
     color: var(--color-accent);
+    text-decoration: none;
 }
 
 .article-snippet__text {
@@ -11,6 +12,7 @@
 }
 
 .article-snippet__meta {
+    font-size: 0.8em;
     display: flex;
 }
 

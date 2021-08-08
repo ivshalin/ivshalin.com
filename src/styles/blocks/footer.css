@@ -1,4 +1,5 @@
 .footer {
+    margin-top: 2.5em;
     grid-column: 2 / span 1;
     padding: var(--line-space) 0;
 }
