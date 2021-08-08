@@ -7,7 +7,6 @@ keywords:
   - ivshalin first post
 draft: true
 ---
-# {{ title }}
 
 First post
 

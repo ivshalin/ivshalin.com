@@ -1,0 +1,16 @@
+.article__title {
+    font-size: 2em;
+    margin: 0 0 var(--quater-line-space) 0;
+}
+
+.article__meta {
+    font-size: 0.8em;
+    display: flex;
+    margin-bottom: calc(var(--line-height) * 2em);
+}
+
+.article__meta > :not(:last-child)::after {
+    display: inline-block;
+    padding: 0 0.5em;
+    content: '·';
+}

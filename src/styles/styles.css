@@ -5,6 +5,7 @@
 @import 'blocks/footer.css';
 @import 'blocks/articles-list.css';
 @import 'blocks/article-snippet.css';
+@import 'blocks/article.css';
 
 :root {
     --color-text: black;
